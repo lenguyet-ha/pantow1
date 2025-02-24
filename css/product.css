@@ -1,0 +1,504 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-color: #f4f4f4;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.product body {
+  font-family: "Gilroy", serif;
+  background-color: #f8f8f8;
+}
+
+.header h1 {
+  font-family: "Gilroy", serif;
+  font-weight: 700;
+  font-size: 42px;
+
+  margin-top: 50px;
+}
+.tab-container {
+  display: flex;
+  background-color: #eee;
+  padding: 6px;
+  border-radius: 44px;
+  width: 348px;
+  height: 57px;
+  margin-top: 30px;
+}
+.tab {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  font-family: "Gilroy", serif;
+  font-weight: 300;
+}
+.tab.active {
+  background-color: #fff;
+  border-radius: 32px;
+}
+
+.product-list {
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  margin-top: 115px;
+  align-items: center;
+}
+.product-list h4 {
+  font-family: "Gilroy", serif;
+  font-weight: 300;
+  font-size: 16.76px;
+  z-index: -55;
+}
+.category {
+  font-family: "Inter", sans-serif;
+  color: #8d8d8d;
+  font-weight: 400;
+  font-size: 16.76px;
+}
+.product-info .product-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.product-card {
+  background: linear-gradient(to bottom, #fafafa 55%, #ffffff 45%);
+  border-radius: 20px;
+  padding: 20px;
+  width: 268.09px;
+  height: 441px;
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: 255.9px;
+
+  transform: translateY(-50px);
+}
+
+.product-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26.56px;
+}
+.price .number,
+.dollar {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.dollar {
+  font-size: 15.23px;
+}
+.number {
+  font-size: 24px;
+}
+.price {
+  display: flex;
+  gap: 4px;
+}
+.add-to-cart {
+  background: #0d1b39;
+  color: white;
+  border: none;
+  border-radius: 31px;
+  width: 48.74px;
+  height: 48.74px;
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.view-all {
+  color: #e58411;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 60px;
+}
+.arrow-left,
+.arrow-right {
+  position: absolute;
+
+  z-index: 200;
+  top: 49%;
+  transform: translateY(-53%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-left {
+  left: calc(50% - 650px);
+}
+
+.arrow-right {
+  right: calc(50% - 650px);
+}
+
+.product-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+}
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  /* Adjust overall container padding */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Scale down header title */
+  .header h1 {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  /* Center and resize the tab container */
+  .tab-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Stack product cards vertically with reduced gap */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* adjust gap as needed */
+    margin-top: 50px;
+    justify-items: center;
+  }
+
+  /* Ensure product cards adjust accordingly */
+  .product-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  /* Optionally hide navigation arrows if they interfere with the grid layout */
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+
+  /* Adjust view-all section spacing */
+  .view-all {
+    margin-top: 20px;
+    gap: 8px;
+  }
+}
+@media screen and (width: 902px) and (height: 1443px) {
+  /* Điều chỉnh container chung */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Điều chỉnh tiêu đề */
+  .header h1 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+
+  /* Sắp xếp danh sách sản phẩm thành lưới 2 cột */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+  }
+
+  /* Điều chỉnh card sản phẩm */
+  .product-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  /* Điều chỉnh hình ảnh bên trong card */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-30px);
+  }
+
+  /* Ẩn mũi tên điều hướng nếu không cần thiết */
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+
+  /* Điều chỉnh phần "View All" */
+  .view-all {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (width: 412px) and (height: 914px) {
+  /* Điều chỉnh container */
+ .product .container {
+     width: 100%; 
+    padding: 0 ;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    align-items: center; 
+  }
+
+  /* Giảm kích thước chữ tiêu đề */
+  .product .header h1 {
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  /* Điều chỉnh tab */
+  .product  .tab-container {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .product  .tab {
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  /* Sử dụng grid 2 cột cho danh sách sản phẩm */
+  .product .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin-top: 15px;
+    position: relative;
+    align-self: center;
+    padding-left: 20px;
+    /* left: 15px; */
+  }
+
+  /* Giảm kích thước card sản phẩm */
+  .product  .product-card {
+    width: 80%;
+    padding: 5px;
+    height: 90%;
+  }
+
+  /* Điều chỉnh hình ảnh trong card */
+  .product  .product-card img {
+    width: 80%;
+    height: auto;
+    transform: translateY(-10px);
+  }
+
+  /* Ẩn mũi tên điều hướng */
+  .product   .arrow-left,
+  .product   .arrow-right {
+    display: none;
+  }
+  .product  .product-info p {
+    font-size: 12px;
+  }
+  .product  .product-info h2 {
+    font-size: 14px;
+  }
+  .product  .rating,  .product .price  .product .number  {
+    font-size: 10px;
+  }
+
+  .product  .add-to-cart {
+    font-size: 10px;
+    border-radius: 31px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .product  .price .dollar{
+font-size: 12px;
+  }
+  .product .container .price .number {
+    font-size: 15px;
+  }
+  .product  .product-add {
+   position: relative;
+   bottom: 20px;
+  
+  }
+
+  /* Giảm kích thước chữ phần "View All" */
+  .product  .view-all {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 393px)  and (min-height: 667px) and (max-height: 876px) {
+  /* Điều chỉnh container */
+  .product{
+    position: relative;
+    top: 20px;
+    margin-bottom: 60px;
+  }
+ .product .container {
+     width: 100%; 
+    padding: 0 ;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    align-items: center; 
+  }
+
+  /* Giảm kích thước chữ tiêu đề */
+  .product .header h1 {
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  /* Điều chỉnh tab */
+  .product  .tab-container {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .product  .tab {
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  /* Sử dụng grid 2 cột cho danh sách sản phẩm */
+  .product .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin-top: 15px;
+    position: relative;
+    align-self: center;
+    padding-left: 20px;
+    /* left: 15px; */
+  }
+
+  /* Giảm kích thước card sản phẩm */
+  .product  .product-card {
+    width: 80%;
+    padding: 5px;
+    height: 90%;
+  }
+
+  /* Điều chỉnh hình ảnh trong card */
+  .product  .product-card img {
+    width: 80%;
+    height: auto;
+    transform: translateY(-10px);
+  }
+
+  /* Ẩn mũi tên điều hướng */
+  .product   .arrow-left,
+  .product   .arrow-right {
+    display: none;
+  }
+  .product  .product-info p {
+    font-size: 12px;
+  }
+  .product  .product-info h2 {
+    font-size: 14px;
+  }
+  .product  .rating,  .product .price  .product .number  {
+    font-size: 10px;
+  }
+
+  .product  .add-to-cart {
+    font-size: 10px;
+    border-radius: 31px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .product  .price .dollar{
+font-size: 12px;
+  }
+  .product .container .price .number {
+    font-size: 15px;
+  }
+  .product  .product-add {
+   position: relative;
+   bottom: 20px;
+  
+  }
+
+  /* Giảm kích thước chữ phần "View All" */
+  .product  .view-all {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}

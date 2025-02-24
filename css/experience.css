@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+
+#experience body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+  }
+  #experience .ex-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+  
+  
+}
+#experience .content-container{
+    margin-right: 141px;
+}
+#experience .ex-container .content-title p {
+    font-size: 18px;
+    font-family: "Gilroy", serif;
+    font-weight: 600;
+    color: #e58411;
+  }
+  #experience  .ex-container  .content-experience p {
+    max-width: 556px;
+    font-size: 18px;
+    font-family: "Gilroy", serif;
+    font-weight: 400;
+    line-height: 33.3px;
+    color: #1e1e1eb5;
+    margin: 20px 0px;
+  }
+  #experience  .ex-container .content-subtitle h1 {
+    max-width: 413px;
+    font-size: 42px;
+    font-family: "Gilroy", serif;
+    font-weight: 700;
+    margin: 20px 0px;
+  }
+  #experience .ex-container  .more-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  #experience  .ex-container  .more-info a {
+    color: #e58411;
+    font-family: "Gilroy", serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  #experience  .ex-container .image-container{
+    position: relative;
+  }
+  #experience  .ex-container   .experience-shapes,
+  #experience .ex-container .experience-shapes1 {
+  position: absolute;
+  
+  background-color: #f2eded;
+  z-index: -1;
+}
+#experience .ex-container .experience-shapes1 {
+    border-radius: 20px;
+  top: 70px;
+  left: 168px;
+  height: 301px;
+  width: 495px;
+}
+#experience .ex-container .experience-shapes {
+  position: absolute;
+  border-radius:0 20px;
+  top: -70px;
+  left: 0;
+  width: 400px;
+  height: 445px;
+  object-fit: cover;
+ 
+}
+@media screen and (min-width: 768px) and (max-width: 902px) {
+  /* Chuyển container thành cột, căn giữa theo cả hai chiều */
+  #experience .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Để container tự cao theo nội dung */
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* Căn giữa hình ảnh và giảm kích thước */
+  #experience .image-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+    width: 350px;
+  }
+  #experience  .ex-container{
+    max-width: 100%;
+    padding-top: 80px;
+  
+
+  }
+  #experience  .ex-container .image-container .experience-shapes,
+   .experience-shapes1{
+    display: none;
+   }
+  .experience {
+    width: 100%;
+    max-width: 300px; /* Giảm kích thước hình ảnh */
+    position: relative;
+    top: 0;
+  }
+  
+  /* Điều chỉnh phần nội dung: căn giữa và loại bỏ vị trí tuyệt đối */
+  #experience  .content-container {
+    margin: 0 auto;
+    text-align: left;
+    position: static;
+    max-width: 400px;
+  }
+  
+  /* Giảm kích thước chữ cho tiêu đề, phụ đề và đoạn mô tả */
+  #experience .content-title p {
+    font-size: 16px;
+  }
+  
+  #experience  .content-subtitle h1 {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  
+  #experience .content-experience p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+  }
+  
+  /* Giảm kích thước chữ cho liên kết More Info */
+  #experience .more-info a {
+    font-size: 12px;
+  }
+  
+  /* Điều chỉnh vị trí và kích thước của các hình dạng (shapes) nếu cần */
+  #experience .experience-shapes1 {
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 200px;
+  }
+  
+  #experience  .experience-shapes {
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 350px;
+  }
+}
+@media screen and (width: 375px)  and (min-height: 667px) and (max-height: 812px) {
+  /* Căn giữa nội dung theo chiều dọc bằng cách sắp xếp theo cột */
+  #experience .ex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Dùng 100vh để container luôn chiếm đủ chiều cao màn hình */
+   padding-top: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+    position: relative;
+    top: -100px;
+  }
+  #experience {
+    margin-bottom: 20px;
+  }
+ #experience body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  #experience html,
+  #experience body {
+    margin: 0;
+    padding: 0;
+  }
+  #experience .experience{
+    width: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #experience .ex-container .image-container{
+    width: 248.5px ;
+  }
+  #experience .ex-container .image-container .experience {
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+  }
+  #experience .experience-shapes1, 
+  #experience .experience-shapes {
+    display: none;
+  }
+  /* Image-container được căn giữa và có margin dưới để tạo khoảng cách */
+
+  
+  /* Content-container được căn giữa và chiếm đủ chiều rộng */
+  #experience  .content-container {
+    width: 80%;
+    text-align: center;
+    margin-right: 0;
+    
+ 
+  }
+  #experience .more-info img{
+    display: none;
+  }
+  #experience .more-info  a{
+    position: relative;
+    left: 30px;
+  }
+  #experience  .content-container .content-experience p{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  
+  /* Giảm kích thước chữ và margin cho các phần nội dung nếu cần */
+  #experience  .content-container .content-title p {
+    font-size: 16px !important;
+    margin-top: 10px;
+  }
+  
+  #experience .content-container  .content-subtitle h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  #experience  .content-experience p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.4;
+  }
+  
+  #experience  .more-info a {
+    font-size: 12px !important;
+  }
+ #experience  .more-info img{
+  margin-left: 0;
+ }
+  #experience .more-info{
+    margin-left: 90px;
+  }
+  
+}
+
+
+@media screen and (min-width: 393px) and (max-width: 412px)  and (min-height: 876px) and (max-height: 914px) {
+  /* Căn giữa nội dung theo chiều dọc bằng cách sắp xếp theo cột */
+  #experience .ex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* Dùng 100vh để container luôn chiếm đủ chiều cao màn hình */
+   padding-top: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+    position: relative;
+    top: 0px;
+  }
+ #experience body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  #experience html,
+  #experience body {
+    margin: 0;
+    padding: 0;
+  }
+  #experience .experience{
+    width: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #experience .ex-container .image-container{
+    width: 248.5px ;
+  }
+  #experience .ex-container .image-container .experience {
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+  }
+  #experience .experience-shapes1, 
+  #experience .experience-shapes {
+    display: none;
+  }
+  /* Image-container được căn giữa và có margin dưới để tạo khoảng cách */
+
+  
+  /* Content-container được căn giữa và chiếm đủ chiều rộng */
+  #experience  .content-container {
+    width: 80%;
+    text-align: center;
+    margin-right: 0;
+    
+ 
+  }
+  #experience  .content-container .content-experience p{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  
+  /* Giảm kích thước chữ và margin cho các phần nội dung nếu cần */
+  #experience  .content-container .content-title p {
+    font-size: 16px !important;
+    margin-top: 10px;
+  }
+  
+  #experience .content-container  .content-subtitle h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  #experience  .content-experience p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.4;
+  }
+  
+  #experience  .more-info a {
+    font-size: 12px !important;
+    position: relative;
+    left: 20%
+  }
+ #experience  .more-info img{
+ display: none;
+ }
+  #experience .more-info{
+    margin-left: 90px;
+  }
+  
+}
+

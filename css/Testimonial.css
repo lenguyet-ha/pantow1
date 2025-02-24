@@ -1,0 +1,907 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 300;
+}
+#testimonial body {
+  font-family: "Gilroy", serif;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+#testimonial  .container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  padding-bottom: 300px;
+  padding-top: 200px;;
+}
+#testimonial  .container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+#testimonial .header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonial .header {
+  margin-bottom: 60px;
+  position: relative;
+}
+#testimonial .header p {
+  font-size: 18px;
+  font-family: "Gilroy", serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  align-self: center;
+  color: #e58411;
+}
+
+#testimonial .header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Gilroy", serif;
+  margin: 0;
+}
+#testimonial .list-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 39px;
+}
+#testimonial .card-container {
+  margin-top: 0;
+}
+#testimonial .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+#testimonial .avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 200px;
+  border: 7px solid white;
+}
+.review {
+  max-width: 252px;
+  display: flex;
+  font-weight: 400;
+  text-align: center;
+  color: #1e1e1e;
+}
+#testimonial .card-content h3,
+.job-title,
+.review {
+  font-family: "Gilroy", serif;
+  margin: 0px 0px 20px 0px;
+}
+.job-title {
+  font-size: 12px;
+  color: #1e1e1e;
+}
+#testimonial .card-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+#testimonial .card-content {
+  background-color: #fff;
+  width: 334px;
+  height: 229px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 20px;
+  right: 18px;
+}
+#testimonial .card {
+  position: relative;
+}
+
+#testimonial .footer {
+  max-width: 1440px;
+  width: 100%;
+  height: 462px;
+  background-color: #f7f7f7;
+  margin-top: 300px;
+}
+#testimonial .footer-content {
+  padding-top: 118px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+#testimonial  .description {
+  display: flex;
+  flex-direction: column;
+  max-width: 293px;
+}
+#testimonial .brand {
+  font-family: "Gilroy", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin: 0px 0px 29px 0px;
+}
+#testimonial .detail-description {
+  font-family: "Gilroy", serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1e1e1e;
+  line-height: 24px;
+  margin: 0px;
+}
+#testimonial .services-list p,
+#testimonial .furniture-list p,
+#testimonial .socials p{
+  font-family: "Gilroy", serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+#testimonial .services,
+#testimonial .furniture,
+#testimonial .follow-us {
+  color: #f6973f;
+}
+
+#testimonial .follow-us {
+  margin-bottom: 0px;
+}
+#testimonial .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px; 
+  position: relative;
+  top: -5px;
+}
+#testimonial .services-list ,
+#testimonial .furniture-list ,
+#testimonial .wrap-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#testimonial .social {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Khoảng cách đồng đều giữa icon và chữ */
+  width: 200px; /* Giữ một độ rộng cố định */
+}
+
+#testimonial .social img {
+  width: 20px; /* Điều chỉnh kích thước icon */
+  height: 20px;
+  flex-shrink: 0; /* Đảm bảo icon không bị co lại */
+}
+
+#testimonial .social p {
+  margin: 0;
+
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  min-width: 120px; /* Đảm bảo tất cả các chữ đều có cùng chiều rộng */
+  display: flex;
+  align-items: center;
+}
+#testimonial .footer-bottom {
+  width: 80%;
+  max-width: 1064px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 188px;
+  padding-top: 118px;
+  font-size: 15px;
+  color: #666;
+  align-items: center;
+}
+#testimonial .footer-bottom p {
+  position: relative;
+  left: -35px;
+  font-family: "Gilroy", sans-serif;
+}
+.footer-bottom a{
+  font-family: "Gilroy", sans-serif;
+}
+
+@media (max-width: 480px) {
+  #testimonial .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  #testimonial  .header h1 {
+    font-size: 24px;
+  }
+  #testimonial .list-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  #testimonial .card {
+    width: 100%;
+    max-width: 350px;
+  }
+  #testimonial .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  #testimonial .footer-content,
+  #testimonial  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 902px) {
+  #testimonial .container {
+    width: 85%;
+  margin-top: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+   
+  }
+  #testimonial {
+    position: relative;
+    bottom: 200px;
+  }
+  #testimonial .container-content{
+    position: relative;
+    bottom: 300px;
+  }
+  #testimonial  {
+    height: 0vh;
+  }
+  #testimonial   body {
+    overflow-x: hidden;
+    height: 1443px;
+  }
+  #testimonial  .header h1 {
+    font-size: 40px;
+  }
+  #testimonial  .list-card {
+    flex-wrap: wrap;
+    max-width: 370px;
+  }
+
+  #testimonial .footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 350px;
+  }
+
+  .follow-us {
+    align-self: self-start;
+  }
+  .description {
+    max-width: 200px;
+    align-items: start;
+  }
+  .furniture-list,
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .furniture-list p,
+  .services-list p {
+    margin-bottom: 0;
+  }
+
+  .detail-description {
+    text-align: start;
+  }
+  #testimonial .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 0;
+  }
+  #testimonial  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (width: 375px) 
+  and (min-height: 667px) and (max-height: 812px) {
+
+  /* ----------- Phần card (đã có) ----------- */
+  #testimonial body {
+    overflow-x: hidden;
+    width: 100%;
+    height: fit-content;
+    
+  }
+
+  #testimonial html{
+    overflow-x: hidden;
+    
+  }
+#testimonial .container{
+  top: -30px;
+}
+  #testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    padding-top: 10px;
+  
+  }
+  #testimonial .container-content{
+    position: static;
+  }
+  #testimonial .list-card{
+    display: flex;
+    gap: 0;
+  }
+  #testimonial .card {
+    width: 80%;
+    height: 300px;
+    max-width: 280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #testimonial .card-content {
+    width: 200px;
+    height: 130px;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    bottom: 140px;
+    left: 13px;
+  }
+
+  #testimonial .card-content .stars {
+    position: relative;
+    bottom: 8px;
+    font-size: 8px;
+    line-height: 15px;
+  }
+
+  #testimonial .card-content h3,
+  .review,
+  .job-title {
+    font-size: 12px;
+    margin-bottom: 4px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  #testimonial  .card-content .avatar {
+    width: 45px;
+    height: 45px;
+    border-width: 5px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  #testimonial .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ----------- Phần footer ----------- */
+  #testimonial  .footer {
+ 
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px; 
+    height: auto; 
+  }
+
+
+  #testimonial .footer-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 0; */
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 0px; 
+    margin-top: 0;
+    flex-wrap: wrap; 
+  }
+
+  #testimonial .footer-content .furniture-list{
+    position: relative;
+    right: 0px;
+  }
+  #testimonial .footer-content .socials .wrap-socials{
+   max-width: 100px;
+   position: relative;
+   bottom: 10px;
+
+  }
+  #testimonial .footer-content .socials .wrap-socials .social{
+    position: relative;
+    left: 15px;
+    width: 20px;
+  }
+  #testimonial .footer-content .socials .wrap-socials .social p{
+    display: none;
+  }
+  #testimonial  .description {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    margin-bottom: 20px;
+  }
+  #testimonial .detail-description {
+    font-size: 12px;
+  }
+  #testimonial .furniture-list p,
+  #testimonial .services-list p,
+  #testimonial .socials p{
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  #testimonial .social{
+    position: relative;
+    left: 80px;
+}
+
+#testimonial .social img{
+    width: 15px;
+    height: 15px;
+}
+
+#testimonial .follow-us {
+    margin-bottom: 0;
+  }
+
+
+  #testimonial  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 0; 
+    padding-top: 0; 
+  }
+
+
+  #testimonial  .footer-bottom p {
+    left: 0; 
+    position: relative;
+  }
+}
+
+@media screen  and (width: 393px) 
+  and (height: 876px) {
+
+  /* ----------- Phần card (đã có) ----------- */
+  #testimonial body {
+    overflow-x: hidden;
+    width: 100%;
+    height: fit-content;
+    
+  }
+
+  #testimonial html{
+    overflow-x: hidden;
+    
+  }
+#testimonial .container{
+  top: -30px;
+}
+  #testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    padding-top: 10px;
+  
+  }
+  #testimonial .container-content{
+    position: static;
+  }
+  #testimonial .list-card{
+    display: flex;
+    gap: 0;
+  }
+  #testimonial .card {
+    width: 80%;
+    height: 300px;
+    max-width: 280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #testimonial .card-content {
+    width: 200px;
+    height: 130px;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    bottom: 140px;
+    left: 13px;
+  }
+
+  #testimonial .card-content .stars {
+    position: relative;
+    bottom: 8px;
+    font-size: 8px;
+    line-height: 15px;
+  }
+
+  #testimonial .card-content h3,
+  .review,
+  .job-title {
+    font-size: 12px;
+    margin-bottom: 4px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  #testimonial  .card-content .avatar {
+    width: 45px;
+    height: 45px;
+    border-width: 5px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  #testimonial .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ----------- Phần footer ----------- */
+  #testimonial  .footer {
+ 
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px; 
+    height: auto; 
+  }
+
+
+  #testimonial .footer-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 0; */
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 0px; 
+    margin-top: 0;
+    flex-wrap: wrap; 
+  }
+
+  #testimonial .footer-content .furniture-list{
+    position: relative;
+    right: 0px;
+  }
+  #testimonial .footer-content .services-list{
+    position: relative;
+   top: 140px;
+   right: 130px;
+  }
+  #testimonial .footer-content .socials .wrap-socials{
+   max-width: 100px;
+   position: relative;
+   bottom: 10px;
+
+  }
+  #testimonial .footer-content .socials .wrap-socials .social{
+    position: relative;
+    left: 15px;
+    width: 20px;
+  }
+  #testimonial .footer-content .socials .wrap-socials .social p{
+    display: none;
+  }
+  #testimonial  .description {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    margin-bottom: 20px;
+  }
+  #testimonial .detail-description {
+    font-size: 12px;
+  }
+  #testimonial .furniture-list p,
+  #testimonial .services-list p,
+  #testimonial .socials p{
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  #testimonial .social{
+    position: relative;
+    left: 80px;
+}
+
+#testimonial .social img{
+    width: 15px;
+    height: 15px;
+}
+
+#testimonial .follow-us {
+    margin-bottom: 0;
+  }
+
+
+  #testimonial  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 0; 
+    padding-top: 0; 
+  }
+
+
+  #testimonial  .footer-bottom p {
+    left: 0; 
+    position: relative;
+  }
+}
+@media screen  and (width: 412px) 
+  and (height: 914px) {
+
+  /* ----------- Phần card (đã có) ----------- */
+  #testimonial body {
+    overflow-x: hidden;
+    width: 100%;
+    height: fit-content;
+    
+  }
+
+  #testimonial html{
+    overflow-x: hidden;
+    
+  }
+#testimonial .container{
+  top: -30px;
+}
+  #testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    padding-top: 10px;
+  
+  }
+  #testimonial .container-content{
+    position: static;
+  }
+  #testimonial .list-card{
+    display: flex;
+    gap: 0;
+  }
+  #testimonial .card {
+    width: 80%;
+    height: 300px;
+    max-width: 280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #testimonial .card-content {
+    width: 200px;
+    height: 130px;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    bottom: 140px;
+    left: 13px;
+  }
+
+  #testimonial .card-content .stars {
+    position: relative;
+    bottom: 8px;
+    font-size: 8px;
+    line-height: 15px;
+  }
+
+  #testimonial .card-content h3,
+  .review,
+  .job-title {
+    font-size: 12px;
+    margin-bottom: 4px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  #testimonial  .card-content .avatar {
+    width: 45px;
+    height: 45px;
+    border-width: 5px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  #testimonial .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ----------- Phần footer ----------- */
+  #testimonial  .footer {
+ 
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px; 
+    height: auto; 
+  }
+
+
+  #testimonial .footer-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    margin-top: 0; */
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 0px; 
+    margin-top: 0;
+    flex-wrap: wrap; 
+  }
+
+  #testimonial .footer-content .furniture-list{
+    position: relative;
+    right: 0px;
+  }
+  #testimonial .footer-content .services-list{
+    position: relative;
+   top: 140px;
+   right: 130px;
+  }
+  #testimonial .footer-content .socials .wrap-socials{
+   max-width: 100px;
+   position: relative;
+   bottom: 10px;
+
+  }
+  #testimonial .footer-content .socials .wrap-socials .social{
+    position: relative;
+    left: 15px;
+    width: 20px;
+  }
+  #testimonial .footer-content .socials .wrap-socials .social p{
+    display: none;
+  }
+  #testimonial  .description {
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    margin-bottom: 20px;
+  }
+  #testimonial .detail-description {
+    font-size: 12px;
+  }
+  #testimonial .furniture-list p,
+  #testimonial .services-list p,
+  #testimonial .socials p{
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  #testimonial .social{
+    position: relative;
+    left: 80px;
+}
+
+#testimonial .social img{
+    width: 15px;
+    height: 15px;
+}
+
+#testimonial .follow-us {
+    margin-bottom: 0;
+  }
+
+
+  #testimonial  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 0; 
+    padding-top: 0; 
+  }
+
+
+  #testimonial  .footer-bottom p {
+    left: 0; 
+    position: relative;
+  }
+}

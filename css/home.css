@@ -1,0 +1,1211 @@
+/* Reset */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+#home body {
+  font-family: "Gilroy", serif;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* HERO SECTION */
+#home .hero {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 1084px;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+#home .hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#home .hero-content{
+  /* height: auto; */
+  position: relative;
+ 
+}
+#home .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home .hero .header {
+  position: absolute;
+top: 31px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#home .hero .container {
+  width: 90%;
+  max-width: 1300px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+#home .logo .panto {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  font-family: "Gilroy", serif;
+  position: relative;
+  left: 5px;
+}
+
+/* Navigation */
+#home .hero .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+ .hero .nav-links li {
+  display: inline-flex;
+}
+
+.hero .nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: "Gilroy", serif;
+
+}
+#home .search-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#home  .hero .header .container .nav .nav-links a:hover {
+  color: #ff7b00;
+  
+}
+#home .search-wrapper .input:focus::placeholder {
+  opacity: 0.5;
+}
+.search-btn:hover {
+  opacity: 0.8;
+}
+#home .search-wrapper .input:focus {
+  width: 400px; 
+  border-color: orange; 
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+/* Giỏ hàng */ a
+.hero .cart img {
+  width: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.hero .card {
+  position: relative;
+  right: 10px;
+}
+#home .hero .hero-content {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-250px);
+  left: 10px;
+}
+#home .hero .hero-content-container {
+  flex-direction: column;
+  line-height: 104px;
+}
+.hero .hero-title {
+  font-family: "Gilroy", serif;
+  font-size: 80px;
+  line-height: 104px;
+  max-width: 1000px;
+  font-weight: 700;
+  margin-top: 161px;
+  position: relative;
+  top: -27px;
+}
+.turn-your-room {
+  font-family: "Gilroy", serif;
+  font-size: 24px;
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  max-width: 606px;
+  z-index: 1;
+  line-height: 38.4px;
+  top: -10px;
+  left: -10px;
+}
+#home .footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 100px;
+  position: relative;
+}
+#home .footer-content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  left: 350px;
+}
+
+#home .footer h2 {
+  font-size: 42px;
+  line-height: 49.22px;
+  font-weight: 700;
+  font-family: "Gilroy", serif;
+  position: relative;
+  right: 20px;
+}
+#home .footer p {
+  max-width: 284px;
+  font-family: "Gilroy", serif;
+  line-height: 30px;
+  text-align: justify;
+  font-size: 16px;
+  height: 90px;
+}
+
+#home h2,
+#home h4 {
+  font-family: "Gilroy", serif;
+}
+#home h4 {
+  position: relative;
+  bottom: 20px;
+  font-size: 24px;
+}
+#home .more-info {
+  /* margin-top: -14px; */
+  color: orange;
+}
+#home .more-info-arrow {
+  display: flex;
+  position: relative;
+}
+#home .more-info-arrow svg {
+  position: absolute;
+  top: 10px;
+  left: 80px;
+  top: 40%;
+}
+#home .search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+#home .input {
+  border-radius: 42px;
+  width: 344px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 0.9px solid rgba(255, 255, 255, 0.6);
+}
+#home input::placeholder {
+  color: white;
+  font-family: "Gilroy", serif;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 20px;
+}
+#home .search-btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  #home  {
+    height: 100vh;
+  }
+
+  /* Hero Section */
+  #home  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  #home  .hero-background,
+  #home  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Điều chỉnh vị trí nội dung hero */
+  #home  .hero-content {
+    transform: translateY(0);
+    left: 0;
+    margin-top: 40px;
+    position: relative;
+    top: 250px;
+  }
+  #home  .container {
+    font-size: 12px;
+  }
+
+  #home  .hero-title {
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 42px;
+  }
+  #home  .panto {
+    font-size: 15px;
+  }
+
+  #home  .turn-your-room {
+    font-size: 16px;
+    left: 0;
+    margin-top: 0px;
+    max-width: 400px;
+  }
+
+  #home  .search-wrapper {
+    position: relative;
+    bottom: 35px;
+  }
+
+  #home  .search-wrapper .input {
+    width: 200px;
+    height: 30px;
+  }
+  #home  input::placeholder {
+    font-size: 12px;
+  }
+  #home  .search-btn {
+    width: 20px;
+    position: relative;
+    right: 30px;
+    margin-bottom: 2px;
+  }
+  /* Header (Logo, Nav) */
+  #home .nav-links {
+    gap: 40px;
+  }
+  #home .nav-links a {
+    font-size: 16px;
+  }
+  #home  .cart img {
+    width: 20px;
+  }
+
+  /* Footer Section */
+  #home .footer {
+    margin: 400px auto 0 auto;
+    height: auto; /* Bỏ chiều cao cố định, để auto theo nội dung */
+    display: flex;
+    flex-direction: row; /* Xếp ngang */
+    align-items: flex-start; /* Căn trên cùng hoặc center tùy ý */
+    justify-content: space-between;
+    text-align: left; /* Thường để text-align left khi xếp ngang */
+    position: relative;
+    padding: 0 20px; /* Nếu muốn có khoảng cách hai bên */
+  }
+
+  /* Tiêu đề "Why Choosing Us" đặt ở bên trái */
+  #home .footer h2 {
+    font-size: 30px; /* Tùy chỉnh lại kích thước */
+    line-height: 40px;
+    margin-right: 30px; /* Tạo khoảng cách với khối kế tiếp */
+    position: static; /* Bỏ position: relative nếu có */
+  }
+
+  /* Khối chứa các item (Luxury facilities, v.v.) */
+  #home .footer-content {
+    position: static; /* Bỏ absolute để không bị tràn ngang */
+    display: flex;
+    flex-direction: row; /* Xếp ngang các item */
+    align-items: flex-start;
+    gap: 20px; /* Khoảng cách ngang giữa các item */
+    margin-top: 0;
+  }
+
+  /* Mỗi khối item (h4, p, link More info) hiển thị dạng cột hẹp */
+  #home .footer-content-item,
+  #home .footer-content > div {
+    max-width: 180px; /* Giới hạn chiều rộng cho mỗi khối */
+  }
+
+  /* Tùy chỉnh lại font-size mô tả cho gọn */
+  #home .footer-content-item p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+  }
+  #home .footer-content-item h4 {
+    font-size: 20px;
+  }
+  /* More info */
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  #home .more-info-arrow svg {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    right: 110px;
+    top: 50px;
+  }
+}
+@media screen and (width: 902px) and (height: 1443px) {
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  /* Hero Section */
+  #home .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  #home .hero-background,
+  #home .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Điều chỉnh vị trí nội dung hero */
+  #home .hero-content {
+    transform: translateY(0);
+    left: 0;
+    margin-top: 40px;
+    position: relative;
+    top: 260px;
+  }
+  #home .container {
+    font-size: 12px;
+  }
+
+  #home .hero-title {
+    font-size: 32px;
+    margin-top: 30px;
+    line-height: 42px;
+  }
+  .panto {
+    font-size: 15px;
+  }
+
+  .turn-your-room {
+    font-size: 16px;
+    line-height: 24px;
+    left: 0;
+    margin-top: 0px;
+    max-width: 500px;
+  }
+
+  .search-wrapper {
+    position: relative;
+    bottom: 35px;
+  
+  }
+
+  .search-wrapper .input {
+    width: 200px;
+    height: 40px !important;
+    position: relative;
+    top: 3px;
+    right: 6px;
+  }
+  input::placeholder {
+    font-size: 14px !important;
+  }
+  .search-btn {
+    width: 30px;
+    height: 30px;
+    /* position: absolute !important;
+    bottom: 20px !important; */
+ 
+    
+  }
+  /* Header (Logo, Nav) */
+  #home .nav-links {
+    gap: 40px;
+  }
+  #home .nav-links a {
+    font-size: 16px;
+  }
+  .cart img {
+    width: 20px;
+  }
+  #home .footer {
+    flex-direction: row; /* Ghi đè thuộc tính row */
+    align-items: center; /* Căn giữa nếu muốn */
+    justify-content: center; /* hoặc center, tùy ý */
+    text-align: center; /* Căn chữ giữa nếu muốn */
+    margin: 300px auto 0 auto; /* Điều chỉnh margin cho gọn */
+    padding: 0 20px;
+    gap: 60px;
+   
+  }
+
+  /* Bên trong footer-content cũng xếp dọc */
+  #home .footer-content {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 30px;
+    position: static;
+    margin-top: 20px; /* Tạo khoảng cách so với tiêu đề h2 */
+  }
+
+  /* Nếu muốn mỗi khối chiếm hết chiều ngang khi xếp dọc */
+  #home .footer-content > div {
+    max-width: 100%;
+  }
+  #home .footer h2 {
+    margin: 50px 0 30px 0;
+  }
+  #home .more-info-arrow {
+    position: relative;
+    gap: 5px;
+   
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    
+  }
+}
+@media screen and (width: 375px) and (height: 667px)   {
+  /* Đảm bảo body không tràn ngang */
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    
+    overflow-x: hidden;
+  
+  }
+  #home{
+    height: 100vh;
+    margin-bottom: 50px;
+  }
+  #home html,
+  #home body {
+    margin: 0;
+    padding: 0;
+  }
+  #home .container {
+    position: relative;
+    top: -20px;
+  }
+  /* HERO SECTION */
+  #home  .hero {
+    height: auto; /* Bỏ chiều cao cố định */
+    min-height: 100vh;
+    padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
+  }
+
+  /* Hình nền hero */
+  #home  .hero-background,
+  #home  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  /* Nội dung hero */
+  #home   .hero-content {
+    transform: translateY(0); /* Bỏ dịch chuyển quá nhiều */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #home .hero-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 45px;
+  }
+  #home  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #home  .turn-your-room {
+    font-size: 10px;
+    line-height: 12px;
+    width: 220px;
+    position: relative;
+   
+  
+  }
+#home .more-info-arrow svg{
+  display: none;
+
+  
+}
+#home .more-info-arrow{
+  height: 20px;
+
+}
+
+
+  #home  .search-wrapper .input {
+    width: 150px;
+    height: 20px;
+  }
+  #home  .search-btn {
+    width: 15px;
+    position: absolute;
+    right: 38px;
+    top: 2.4px;
+  }
+  #home  input::placeholder {
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    left: -10px;
+  }
+
+
+  #home  .logo .panto {
+    font-size: 14px !important;
+  }
+
+  #home .nav-links {
+    gap: 10px !important; 
+  }
+  #home .nav-links a {
+    font-size: 11px; 
+  }
+  .cart img {
+    width: 15px; 
+  }
+
+  /* FOOTER */
+  #home .footer {
+     margin: 100px auto 0 auto !important; /* Giảm margin trên */
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    left: 82.5px;
+    position: absolute;
+    padding: 10px; 
+    top: 200px;
+   
+    
+  }
+
+  #home .footer h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  #home .footer-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  
+  }
+
+  #home  .footer-content > div {
+    max-width: 200px; /* Giới hạn độ rộng mỗi khối */
+  }
+
+  #home .footer-content-item p {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    height: 50px;
+  }
+  #home .footer-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+  }
+  #home .footer-content-item h4 {
+    font-size: 13px;
+    position: static; /* Bỏ absolute nếu có */
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Mũi tên More info */
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    justify-self: center;
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (width: 375px) and (height: 812px){
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    
+    overflow-x: hidden;
+  
+  }
+  #home{
+  
+    min-height: 90vh;
+
+  }
+  #home html,
+  #home body {
+    margin: 0;
+    padding: 0;
+  }
+  #home .container {
+    position: relative;
+    top: -20px;
+  }
+  /* HERO SECTION */
+  #home  .hero {
+    height: auto; /* Bỏ chiều cao cố định */
+    padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
+  }
+
+  /* Hình nền hero */
+  #home  .hero-background,
+  #home  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  /* Nội dung hero */
+  #home   .hero-content {
+    transform: none;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+  }
+
+  #home .hero-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 45px;
+  }
+  #home  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #home  .turn-your-room {
+    font-size: 10px;
+    line-height: 12px;
+    width: 220px;
+    position: relative;
+   
+  
+  }
+
+
+  #home  .search-wrapper .input {
+    width: 150px;
+    height: 20px;
+  }
+  #home  .search-btn {
+    width: 15px;
+    position: absolute;
+    right: 38px;
+    top: 2.4px;
+  }
+  #home  input::placeholder {
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    left: -10px;
+  }
+
+  /* Header (Logo, Nav) */
+  #home .container {
+    font-size: 12px; /* Giảm cỡ chữ chung nếu cần */
+  }
+  #home  .logo .panto {
+    font-size: 14px !important;
+  }
+
+  #home .nav-links {
+    gap: 10px !important; /* Giảm khoảng cách giữa các link */
+  }
+  #home .nav-links a {
+    font-size: 12px; /* Giảm một chút cho vừa màn hình hẹp */
+  }
+  .cart img {
+    width: 15px; /* Giảm kích thước icon giỏ hàng */
+  }
+
+  /* FOOTER */
+  #home .footer {
+     margin: 100px auto 0 auto !important; /* Giảm margin trên */
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    left: 82.5px;
+    position: absolute;
+    padding: 10px; 
+   
+    
+  }
+
+  #home .footer h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  #home .footer-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #home  .footer-content > div {
+    max-width: 200px; /* Giới hạn độ rộng mỗi khối */
+  }
+
+  #home .footer-content-item p {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    height: 50px;
+  }
+  #home .footer-content-item {
+    height: 120px;
+  }
+  #home .footer-content-item h4 {
+    font-size: 13px;
+    position: static; /* Bỏ absolute nếu có */
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Mũi tên More info */
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100px;
+    justify-self: center;
+  }
+  #home  .more-info-arrow svg {
+    display: none;
+  }
+}
+@media screen and (width:393px) and (height: 876px)  {
+  /* Đảm bảo body không tràn ngang */
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    
+    overflow-x: hidden;
+  
+  }
+  #home{
+    height: 80vh;
+    margin-bottom: 50px;
+  }
+  #home html,
+  #home body {
+    margin: 0;
+    padding: 0;
+  }
+  #home .container {
+    position: relative;
+    top: -20px;
+  }
+  /* HERO SECTION */
+  #home  .hero {
+    height: auto; /* Bỏ chiều cao cố định */
+    padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
+  }
+
+  /* Hình nền hero */
+  #home  .hero-background,
+  #home  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  /* Nội dung hero */
+  #home   .hero-content {
+    transform: translateY(0); /* Bỏ dịch chuyển quá nhiều */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 260px;
+  }
+
+  #home .hero-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 45px;
+  }
+  #home  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #home  .turn-your-room {
+    font-size: 10px;
+    line-height: 12px;
+    width: 220px;
+    position: relative;
+   
+  
+  }
+
+
+  #home  .search-wrapper .input {
+    width: 150px;
+    height: 20px;
+  }
+  #home  .search-btn {
+    width: 15px;
+    position: absolute;
+    right: 38px;
+    top: 2.4px;
+  }
+  #home  input::placeholder {
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    left: -10px;
+  }
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    top: -20px;
+  
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-top: 35px;
+   
+  }
+
+  #home  .logo .panto {
+    font-size: 14px !important;
+  }
+
+  #home .nav-links {
+    gap: 10px !important; 
+  }
+  #home .nav-links a {
+    font-size: 11px; 
+  }
+  .cart img {
+    width: 15px; 
+  }
+
+  /* FOOTER */
+  #home .footer {
+     margin: 150px auto 0 auto !important; /* Giảm margin trên */
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    left: 82.5px;
+    position: absolute;
+    padding: 10px; 
+   
+    
+  }
+
+  #home .footer h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  #home .footer-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #home  .footer-content > div {
+    max-width: 200px; /* Giới hạn độ rộng mỗi khối */
+  }
+
+  #home .footer-content-item p {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    height: 50px;
+  }
+  #home .footer-content-item {
+    height: 120px;
+  }
+  #home .footer-content-item h4 {
+    font-size: 13px;
+    position: static; /* Bỏ absolute nếu có */
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Mũi tên More info */
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    justify-self: center;
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-bottom: 35px;
+  }
+}
+@media  screen and (width: 412px) and (height: 914px) {
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    
+    overflow-x: hidden;
+  
+  }
+  #home{
+  
+    min-height: 80vh;
+
+  }
+  #home html,
+  #home body {
+    margin: 0;
+    padding: 0;
+  }
+  #home .container {
+    position: relative;
+    top: -20px;
+  }
+  /* HERO SECTION */
+  #home  .hero {
+    height: auto; /* Bỏ chiều cao cố định */
+    padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
+  }
+
+  /* Hình nền hero */
+  #home  .hero-background,
+  #home  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  /* Nội dung hero */
+  #home   .hero-content {
+    transform: none;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+  }
+
+  #home .hero-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 45px;
+  }
+  #home  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #home  .turn-your-room {
+    font-size: 12px;
+    line-height: 16px;
+    width: 300px;
+    position: relative;
+   
+  
+  }
+
+
+  #home  .search-wrapper .input {
+    width: 150px;
+    height: 20px;
+  }
+  #home  .search-btn {
+    width: 15px;
+    position: absolute;
+    right: 38px;
+    top: 2.4px;
+  }
+  #home  input::placeholder {
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    left: -10px;
+  }
+
+  /* Header (Logo, Nav) */
+  #home .container {
+    font-size: 12px; /* Giảm cỡ chữ chung nếu cần */
+  }
+  #home  .logo .panto {
+    font-size: 14px !important;
+  }
+
+  #home .nav-links {
+    gap: 10px !important; /* Giảm khoảng cách giữa các link */
+  }
+  #home .nav-links a {
+    font-size: 12px; /* Giảm một chút cho vừa màn hình hẹp */
+  }
+  .cart img {
+    width: 15px; /* Giảm kích thước icon giỏ hàng */
+  }
+
+  /* FOOTER */
+  #home .footer {
+     margin: 100px auto 0 auto !important; /* Giảm margin trên */
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    left: 82.5px;
+    position: absolute;
+    padding: 10px; 
+    top: 200px;
+   
+    
+  }
+
+  #home .footer h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  #home .footer-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #home  .footer-content > div {
+    max-width: 200px; /* Giới hạn độ rộng mỗi khối */
+  }
+
+  #home .footer-content-item p {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    height: 50px;
+  }
+  #home .footer-content-item {
+    height: 120px;
+  }
+  #home .footer-content-item h4 {
+    font-size: 13px;
+    position: static; /* Bỏ absolute nếu có */
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Mũi tên More info */
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    justify-self: center;
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-bottom: 20px;
+  }
+}

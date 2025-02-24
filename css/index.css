@@ -1,0 +1,139 @@
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+     height: max-content;
+}
+#experience1 .ex-container{
+    position: relative;
+    padding-top: 300px;
+
+
+}
+#material {
+    padding-top: 200px;
+}
+#material .material-body {
+    position: relative;
+
+}
+#material .material-body .materials-text{
+  position: relative;
+  top: 250px;
+  
+}
+#testimonial .container {
+    position: relative;
+    top: 400px;
+}
+.more-info-arrow:hover {
+    transform: translateX(5px); /* Dịch chuyển toàn bộ nhóm */
+  }
+  
+  /* Animation cho đường line */
+  .more-info-arrow svg line {
+    stroke-dasharray: 80; /* Tổng chiều dài */
+    stroke-dashoffset: 80; /* Bắt đầu ẩn */
+    animation: draw-line 0.5s linear forwards;
+  }
+  
+  @keyframes draw-line {
+    from {
+      stroke-dashoffset: 80; /* Ẩn đường */
+    }
+    to {
+      stroke-dashoffset: 0; /* Hiện dần */
+    }
+  }
+  
+  /* Animation cho mũi tên */
+  .more-info-arrow svg polyline {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .more-info-arrow:hover svg polyline {
+    transform: translateX(5px); /* Dịch chuyển mũi tên */
+  }
+  .view-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .view-all p {
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .view-all:hover {
+    transform: translateX(5px); /* Dịch chuyển toàn bộ */
+  }
+  
+  .view-all:hover p {
+    color: #ff9900; /* Đổi màu chữ khi hover */
+  }
+  
+  /* Hiệu ứng vẽ line */
+  .view-all svg line {
+    stroke-dasharray: 80; /* Tổng chiều dài */
+    stroke-dashoffset: 80; /* Ẩn ban đầu */
+    animation: draw-line 0.5s linear forwards;
+  }
+  
+  @keyframes draw-line {
+    from {
+      stroke-dashoffset: 80; /* Ẩn */
+    }
+    to {
+      stroke-dashoffset: 0; /* Hiện dần */
+    }
+  }
+  
+  /* Hiệu ứng mũi tên */
+  .view-all svg polyline {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .view-all:hover svg polyline {
+    transform: translateX(5px); /* Mũi tên di chuyển sang phải */
+  }
+  
+  .more-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .more-info a {
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .more-info img {
+    width: 24px; /* Đảm bảo icon không bị quá lớn */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .more-info:hover {
+    transform: translateX(5px); /* Dịch toàn bộ sang phải */
+  }
+  
+  .more-info:hover a {
+    color: #ff9900; /* Đổi màu chữ khi hover */
+    opacity: 0.7; /* Làm chữ hơi mờ */
+  }
+  
+  .more-info:hover img {
+    transform: translateX(5px); /* Dịch ảnh mũi tên sang phải */
+  }
+  
